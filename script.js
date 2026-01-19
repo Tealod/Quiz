@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('student-info').textContent = `Student: ${name}`;
 
   // ── Timer (60 minutes) ────────────────────────────────────────
-  let timeLeft = 1 * 60; // seconds
+  let timeLeft = 35 * 60; // seconds
   const timeDisplay = document.getElementById('time');
 
   const timer = setInterval(() => {
@@ -83,4 +83,5 @@ document.addEventListener('DOMContentLoaded', () => {
     // Optional: scroll to results
     document.getElementById('results').scrollIntoView({ behavior: 'smooth' });
   }
+
 });
