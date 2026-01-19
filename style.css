@@ -1,0 +1,146 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #f4f4f9;
+}
+
+.header {
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.timer {
+  font-size: 1.4em;
+  margin: 12px 0;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+#student-info {
+  font-size: 1.1em;
+  margin-top: 8px;
+}
+
+.welcome-container {
+  text-align: center;
+  max-width: 500px;
+  margin: 100px auto;
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+
+.form-group {
+  margin: 20px 0;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  border: 2px solid #bdc3c7;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 14px 32px;
+  font-size: 1.2em;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+#startBtn {
+  background: #27ae60;
+  color: white;
+  margin-top: 30px;
+}
+
+#startBtn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+.question-card {
+  background: white;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  border-left: 5px solid #3498db;
+}
+
+.question-num {
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1.3em;
+  margin-bottom: 12px;
+}
+
+.math-box {
+  background: #ecf0f1;
+  padding: 16px;
+  margin: 16px 0;
+  text-align: center;
+  border-radius: 6px;
+  border-left: 5px solid #3498db;
+}
+
+.check-btn {
+  display: block;
+  width: 240px;
+  margin: 40px auto;
+  padding: 14px;
+  background: #e67e22;
+  color: white;
+  font-size: 1.2em;
+}
+
+.correct   { background-color: #d5f4e6 !important; border-left-color: #27ae60 !important; }
+.incorrect { background-color: #fadbd8 !important; border-left-color: #e74c3c !important; }
+
+#results {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 30px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  max-width: 700px;
+}
+
+.correct-answer-display {
+    background: #e8f5e9;
+    border: 1px solid #a5d6a7;
+    color: #2e7d32;
+}
+
+.incorrect .correct-answer-display {
+    background: #ffebee;
+    border: 1px solid #ef9a9a;
+    color: #c62828;
+}
+
+.correct-answer-display strong {
+    color: inherit;
+}
