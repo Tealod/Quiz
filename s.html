@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Booster Mock 1: SAT Math Quiz</title>
+  
+  <!-- Favicon qo'shildi -->
+  <link rel="icon" href="./favicon.jpg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Private Set 1</h2>
+    <div class="timer">Remaining time: <span id="time">35:00</span></div>
+    <div id="student-info"></div>
+  </div>
+
+  <div id="quiz-container">
+
+
+  <!-- Question 1 -->
+  <div class="question-card" data-qnum="1" data-answer="2586%" data-type="text">
+    <span class="question-num">Question 1</span>
+    <p>
+      \( f(n) = 9(11.8)^{n/3} \).  
+      How much, in percent, is the 9th term more than the 5th term?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-card" data-qnum="2" data-answer="2.2" data-type="text">
+    <span class="question-num">Question 2</span>
+    <p>
+      \(10x^4 + 11x^2 + 3 = (2x^2 + a)(5x^2 + b) = (2x^2 + c)(5x^2 + d)\).  
+      What is \(a + c\)?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-card" data-qnum="3" data-answer="D" data-type="radio">
+    <span class="question-num">Question 3</span>
+    <p>
+      The appearance frequency of an object is 87 times for every \(m\) minutes.
+      How many times does it appear in \(k\) hours?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q3" value="A"> A) \( \frac{87k}{60m} \)</li>
+      <li><input type="radio" name="q3" value="B"> B) \( \frac{87m}{60k} \)</li>
+      <li><input type="radio" name="q3" value="C"> C) \( \frac{87k}{m} \)</li>
+      <li><input type="radio" name="q3" value="D"> D) \( \frac{5220k}{m} \)</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="question-card" data-qnum="4" data-answer="224" data-type="text">
+    <span class="question-num">Question 4</span>
+    <p>
+      Square-based pyramids A and B have base side 16 cm.
+      Heights are 6 cm and 15 cm.  
+      Find the difference of surface areas.
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 5 -->
+  <div class="question-card" data-qnum="5" data-answer="E" data-type="radio">
+    <span class="question-num">Question 5</span>
+    <p>
+      Population increased by 123% every 3 weeks.
+      Population after 12 weeks is 484.
+      Which model is correct?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q5" value="A"> A) \(1080(1.23)^{t/3}\)</li>
+      <li><input type="radio" name="q5" value="B"> B) \(260(1.23)^{t/3}\)</li>
+      <li><input type="radio" name="q5" value="C"> C) \(44(2.23)^{t/3}\)</li>
+      <li><input type="radio" name="q5" value="D"> D) \(21(2.23)^{t/3}\)</li>
+      <li><input type="radio" name="q5" value="E"> E) No answer</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 6 -->
+  <div class="question-card" data-qnum="6" data-answer="C" data-type="radio">
+    <span class="question-num">Question 6</span>
+    <p>
+      \(N(m) = 28Q^{m/3}\).  
+      If bacteria increases by \(p\%\) every 180 seconds, find \(p\).
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q6" value="A"> A) \(100(Q^{60}-1)\)</li>
+      <li><input type="radio" name="q6" value="B"> B) \(100(Q^{1/3}-1)\)</li>
+      <li><input type="radio" name="q6" value="C"> C) \(100(Q-1)\)</li>
+      <li><input type="radio" name="q6" value="D"> D) \(100(Q^3-1)\)</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 7 -->
+  <div class="question-card" data-qnum="7" data-answer="D" data-type="radio">
+    <span class="question-num">Question 7</span>
+    <p>
+      \(f(x)=27b^x\).  
+      If \(f(x)\) decreases by \(c\%\) when x increases by 1, what is \(c\)?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q7" value="A"> A) \(100(b-1)\)</li>
+      <li><input type="radio" name="q7" value="B"> B) \(100b\)</li>
+      <li><input type="radio" name="q7" value="C"> C) \(100-b\)</li>
+      <li><input type="radio" name="q7" value="D"> D) \(100(1-b)\)</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 8 -->
+  <div class="question-card" data-qnum="8" data-answer="40000" data-type="text">
+    <span class="question-num">Question 8</span>
+    <p>
+      A is 412% more than B.  
+      A is 0.0128% of C.  
+      If C is P% of B, find \(P/100\).
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 9 -->
+  <div class="question-card" data-qnum="9" data-answer="D" data-type="radio">
+    <span class="question-num">Question 9</span>
+    <p>
+      \(f(x)=ax^2+bx+c\) has vertex (7,11) and two x-intercepts.
+      Which could be \(a+b+c\)?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q9" value="A"> A) 29</li>
+      <li><input type="radio" name="q9" value="B"> B) 16</li>
+      <li><input type="radio" name="q9" value="C"> C) 13</li>
+      <li><input type="radio" name="q9" value="D"> D) 5</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 10 -->
+  <div class="question-card" data-qnum="10" data-answer="5378000" data-type="text">
+    <span class="question-num">Question 10</span>
+    <p>
+      Rectangular land: 400 yd × 180 yd.  
+      Soil depth = 6 inches.  
+      Cost = $16.6 per cubic foot.  
+      Find total cost.
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 11 -->
+  <div class="question-card" data-qnum="11" data-answer="111" data-type="text">
+    <span class="question-num">Question 11</span>
+    <p>
+      Original map side = 45 cm, scale 1:70.  
+      New map side is 37% less.  
+      Find real-life distance for 1 cm.
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 12 -->
+  <div class="question-card" data-qnum="12" data-answer="C" data-type="radio">
+    <span class="question-num">Question 12</span>
+    <p>
+      Lines \(6x+11y=40\) and \(ax+by=40\) are perpendicular.
+      Which pair is also perpendicular?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q12" value="A"> A</li>
+      <li><input type="radio" name="q12" value="B"> B</li>
+      <li><input type="radio" name="q12" value="C"> C</li>
+      <li><input type="radio" name="q12" value="D"> D</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 13 -->
+  <div class="question-card" data-qnum="13" data-answer="6510" data-type="text">
+    <span class="question-num">Question 13</span>
+    <p>
+      Two similar cylinders.  
+      Volume of A = \(1176\pi\).  
+      Find \(n-k\) if surface areas are \(n\pi\) and \(k\pi\).
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 14 -->
+  <div class="question-card" data-qnum="14" data-answer="D" data-type="radio">
+    <span class="question-num">Question 14</span>
+    <p>
+      Which information is enough to prove triangles are similar?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q14" value="A"> A) Only I</li>
+      <li><input type="radio" name="q14" value="B"> B) I and II</li>
+      <li><input type="radio" name="q14" value="C"> C) Only II</li>
+      <li><input type="radio" name="q14" value="D"> D) Neither</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 15 -->
+  <div class="question-card" data-qnum="15" data-answer="18" data-type="text">
+    <span class="question-num">Question 15</span>
+    <p>
+      \(P(t)=400(1.02)^{2t/3}\).  
+      If growth is 2% every m months, find m.
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 16 -->
+  <div class="question-card" data-qnum="16" data-answer="A" data-type="radio">
+    <span class="question-num">Question 16</span>
+    <p>
+      A circle centered at (3,9) has tangent at (9,20).
+      Which point lies on the tangent?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q16" value="A"> A</li>
+      <li><input type="radio" name="q16" value="B"> B</li>
+      <li><input type="radio" name="q16" value="C"> C</li>
+      <li><input type="radio" name="q16" value="D"> D</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 17 -->
+  <div class="question-card" data-qnum="17" data-answer="16" data-type="text">
+    <span class="question-num">Question 17</span>
+    <p>
+      A circle of radius 8 cm is inscribed in an equilateral triangle.
+      Side length is \(k\sqrt{3}\). Find k.
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 18 -->
+  <div class="question-card" data-qnum="18" data-answer="D" data-type="radio">
+    <span class="question-num">Question 18</span>
+    <p>
+      Which exponential form shows maximum value as coefficient?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q18" value="A"> A) Only I</li>
+      <li><input type="radio" name="q18" value="B"> B) Only II</li>
+      <li><input type="radio" name="q18" value="C"> C) I and II</li>
+      <li><input type="radio" name="q18" value="D"> D) Neither</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 19 -->
+  <div class="question-card" data-qnum="19" data-answer="0.8,4/5" data-type="text">
+    <span class="question-num">Question 19</span>
+    <p>
+      In right triangle ABC, find \(\sin C\).
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 20 -->
+  <div class="question-card" data-qnum="20" data-answer="21102" data-type="text">
+    <span class="question-num">Question 20</span>
+    <p>
+      A sphere of radius 1.2 m is melted into cubes of side 7 cm.
+      How many cubes are formed?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+</div>
+
+
+  <button class="check-btn" id="finishBtn">Finish</button>
+  <div id="results" style="display:none; margin: 40px auto; max-width: 800px;"></div>
+
+  <script src="script.js?v=5"></script>
+
+</body>
+
+</html>
+
+
+
