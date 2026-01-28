@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Private Set 1</title>
+  
+  <!-- Favicon qo'shildi -->
+  <link rel="icon" href="./favicon.jpg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Private Set 1</h2>
+    <div class="timer">Remaining time: <span id="time">35:00</span></div>
+    <div id="student-info"></div>
+  </div>
+
+  <div id="quiz-container">
+
+
+  <!-- Question 1 -->
+  <div class="question-card" data-qnum="1" data-answer="2586%" data-type="text">
+    <span class="question-num">Question 1</span>
+    <p>
+      \( f(n) = 9(11.8)^{n/3} \).  
+      How much, in percent, is the 9th term more than the 5th term?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 2 -->
+  <div class="question-card" data-qnum="2" data-answer="2.2" data-type="text">
+    <span class="question-num">Question 2</span>
+    <p>
+    \(10x^4 + 11x^2 + 3\)
+    The given expression can be written as
+    \((2x^2 + a)(5x^2 + b)\), where \(a\) and \(b\) are integers,
+    or as \((2x^2 + c)(5x^2 + d)\), where \(c\) and \(d\) are non-integers.
+    What is the value of \((a + c)\)?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 3 -->
+  <div class="question-card" data-qnum="3" data-answer="D" data-type="radio">
+    <span class="question-num">Question 3</span>
+    <p>
+      The appearance frequency of an object is 87 times for every \(m\) minutes.
+      How many times does it appear in \(k\) hours?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q3" value="A"> A) \( \frac{87k}{60m} \)</li>
+      <li><input type="radio" name="q3" value="B"> B) \( \frac{87m}{60k} \)</li>
+      <li><input type="radio" name="q3" value="C"> C) \( \frac{87k}{m} \)</li>
+      <li><input type="radio" name="q3" value="D"> D) \( \frac{5220k}{m} \)</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 4 -->
+  <div class="question-card" data-qnum="4" data-answer="224" data-type="text">
+    <span class="question-num">Question 4</span>
+    <p>
+      The height of square-based right 
+pyramid A is 6 cm, and the height of
+square-based right pyramid B is 15 cm. If 
+side length of the base of each pyramid is 
+16 cm. What is the difference of the 
+surface areas of the prisms B and A?.
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 5 -->
+  <div class="question-card" data-qnum="5" data-answer="D" data-type="radio">
+    <span class="question-num">Question 5</span>
+    <p>
+     Population of a certain insect was 123% 
+     more than every 3 weeks than the 
+     population of previous 3-week period.
+     The population was 484 after 12 weeks. 
+     What will be population t weeks after 
+     first observation?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q5" value="A"> A) \(108.22(1.23)^{t/3}\)</li>
+      <li><input type="radio" name="q5" value="B"> B) \(26.12(1.23)^{t/3}\)</li>
+      <li><input type="radio" name="q5" value="C"> C) \(44.37(2.23)^{t/3}\)</li>
+      <li><input type="radio" name="q5" value="D"> D) \(19.57(2.23)^{t/3}\)</li>
+      
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 6 -->
+  <div class="question-card" data-qnum="6" data-answer="C" data-type="radio">
+    <span class="question-num">Question 6</span>
+    <p>
+      \(N(m) = 28Q^{m/3}\).  
+      N(m) shows number of bacteria m 
+      minutes after initial condition, where Q 
+      is a constant more than 1. If bacteria
+      increased by p% for every 180 seconds,
+      which of the following is the value of p?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q6" value="A"> A) \(100(Q^{60}-1)\)</li>
+      <li><input type="radio" name="q6" value="B"> B) \(100(Q^{1/3}-1)\)</li>
+      <li><input type="radio" name="q6" value="C"> C) \(100(Q-1)\)</li>
+      <li><input type="radio" name="q6" value="D"> D) \(100(Q^3-1)\)</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 7 -->
+  <div class="question-card" data-qnum="7" data-answer="D" data-type="radio">
+    <span class="question-num">Question 7</span>
+    <p>
+      \(f(x)=27b^x\).  
+      For the given function, b is a constant. If 
+      x increases by 1 unit, f(x) decreases by 
+      c%. Which of the following is equivalent 
+      to c?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q7" value="A"> A) \(100(b-1)\)</li>
+      <li><input type="radio" name="q7" value="B"> B) \(100b\)</li>
+      <li><input type="radio" name="q7" value="C"> C) \(100-b\)</li>
+      <li><input type="radio" name="q7" value="D"> D) \(100(1-b)\)</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 8 -->
+  <div class="question-card" data-qnum="8" data-answer="40000" data-type="text">
+    <span class="question-num">Question 8</span>
+    <p>
+      A is 412% more than B.  
+      A is 0.0128% of C.  
+      If C is P% of B, find \(P/100\).
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 9 -->
+  <div class="question-card" data-qnum="9" data-answer="D" data-type="radio">
+    <span class="question-num">Question 9</span>
+    <p>
+      \(f(x)=ax^2+bx+c\).The vertex of parabola is at (7, 11). If the 
+parabola has two x-intercepts, which of 
+the following could be the value of \(a+b+c\)?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q9" value="A"> A) 29</li>
+      <li><input type="radio" name="q9" value="B"> B) 16</li>
+      <li><input type="radio" name="q9" value="C"> C) 13</li>
+      <li><input type="radio" name="q9" value="D"> D) 5</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 10 -->
+  <div class="question-card" data-qnum="10" data-answer="5378000" data-type="text">
+    <span class="question-num">Question 10</span>
+    <p>
+      A certain rectangular land area has 
+length of 400 yards, and width of 180 
+yards. Farmer wants to add mineral-rich 
+soil to cover 6 inches depth of all the 
+area. If the price of soil 16.6$ per cubic 
+feet, what is the total cost of farmer, in 
+dollar?
+(1 yard = 3 feet, 1 feet = 12 inches)
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 11 -->
+  <div class="question-card" data-qnum="11" data-answer="111" data-type="text">
+    <span class="question-num">Question 11</span>
+    <p>
+     A square shaped map has side of 45 cm
+and 1 cm in map is equivalent 70 cm in 
+real life. If new form of the map printed 
+such that one side of new map 37% less 
+than the side of the previous map. How 
+much, in cm, in real life is equivalent to 1 
+cm in the map?
+(Round your answer to the nearest whole 
+number)
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 12 -->
+  <div class="question-card" data-qnum="12" data-answer="C" data-type="radio">
+    <span class="question-num">Question 12</span>
+    <p>
+      \(6x+11y=40\) 
+      \(ax+by=40\) 
+      The given lines are perpendicular, where 
+      a and b are constants. Which of the 
+      following pair of lines are also 
+      perpendicular?
+    </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q12" value="A"> A)12x + 11y = 40 <br>
+ 2ax + by = 40</li>
+      <li><input type="radio" name="q12" value="B"> B)6x + 33y = 40 <br>
+ ax - 3by = 40</li>
+      <li><input type="radio" name="q12" value="C"> C)24x + 11y = 40 <br>
+ ax + 4by = 40</li>
+      <li><input type="radio" name="q12" value="D"> D)6x + 22y = 40 <br>
+ -2ax + by = 40</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 13 -->
+  <div class="question-card" data-qnum="13" data-answer="6510" data-type="text">
+    <span class="question-num">Question 13</span>
+    <img src="a.png">
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 14 -->
+  <div class="question-card" data-qnum="14" data-answer="D" data-type="radio">
+    <span class="question-num">Question 14</span>
+   <p>
+    For triangles \(PQR\) and \(KLM\), the angles \(Q\) and \(L\) are equivalent and
+    \(PR = \frac{3}{4}KM\).
+  </p>
+
+  <p>
+    Which of the following information is enough to claim that
+    triangles \(PQR\) and \(KLM\) are similar?
+  </p>
+
+  <p>
+    I. The length of \(PQ\) is \(\frac{3}{4}\) of the length of \(KL\). <br>
+    II. The length of \(LM\) is \(\frac{3}{4}\) of the length of \(QR\).
+  </p>
+    <ul class="options-list">
+      <li><input type="radio" name="q14" value="A"> A) Only I</li>
+      <li><input type="radio" name="q14" value="B"> B) I and II</li>
+      <li><input type="radio" name="q14" value="C"> C) Only II</li>
+      <li><input type="radio" name="q14" value="D"> D) Neither</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 15 -->
+  <div class="question-card" data-qnum="15" data-answer="18" data-type="text">
+    <span class="question-num">Question 15</span>
+    <p>
+      \(P(t)=400(1.02)^{2t/3}\).  
+      P(t) shows population of a city, in 
+millions, t years after 2008. If the 
+population increased by 2% every m 
+months after 2008, what is the value of 
+m?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 16 -->
+  <div class="question-card" data-qnum="16" data-answer="A" data-type="radio">
+    <span class="question-num">Question 16</span>
+    <p>
+      A circle has center at (3, 9). Line j is
+      tangent to the circle at (9, 20). Which of
+      the following points is on the line j?
+    <ul class="options-list">
+      <li><input type="radio" name="q16" value="A"> A) (-2, 26)</li>
+      <li><input type="radio" name="q16" value="B"> B) (-3, 41)</li>
+      <li><input type="radio" name="q16" value="C"> C) (-8, 22)</li>
+      <li><input type="radio" name="q16" value="D"> D) (-12, -66)</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 17 -->
+  <div class="question-card" data-qnum="17" data-answer="16" data-type="text">
+    <span class="question-num">Question 17</span>
+    <p>
+      A circle of radius 8 cm is inscribed in an equilateral triangle.
+      Side length is \(k\sqrt{3}\). Find k.
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 18 -->
+  <div class="question-card" data-qnum="18" data-answer="D" data-type="radio">
+    <span class="question-num">Question 18</span>
+    <p>
+     Which of the following equivalent forms of a function shows the
+    maximum value as the constant or coefficient,
+    where \(a\) and \(b\) are integers such that \(a > 0\) and \(b < 0\)?
+    \((x \ge 0)\)
+    </p> 
+    <p>I. \( f(x) = a(0.36)(0.6)^{x+2} \) <br>
+    II. \( f(x) = b(0.125)(0.5)^{x-3} \)</p>
+    
+    <ul class="options-list">
+      <li><input type="radio" name="q18" value="A"> A) Only I</li>
+      <li><input type="radio" name="q18" value="B"> B) Only II</li>
+      <li><input type="radio" name="q18" value="C"> C) I and II</li>
+      <li><input type="radio" name="q18" value="D"> D) Neither</li>
+    </ul>
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 19 -->
+  <div class="question-card" data-qnum="19" data-answer="0.8,4/5" data-type="text">
+    <span class="question-num">Question 19</span>
+    <p>
+      For right triangle ABC, A is right angle. 
+Point R is on AB and point S is on BC 
+such that RS is perpendicular to BC.
+If BR = 5, RS = 3, what is the value of \(\sin C\)?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+  <!-- Question 20 -->
+  <div class="question-card" data-qnum="20" data-answer="21102" data-type="text">
+    <span class="question-num">Question 20</span>
+    <p>
+   A spherical metal with radius of 1.2 
+meters is melted to make small equal 
+sized metallic cubes with side length of 
+7 cm. How many cubes can be made
+with the given amount of meta, if there is 
+no waste?
+    </p>
+    Your Answer: <input type="text" class="user-input">
+    <div class="correct-answer-display" style="display:none;">
+      <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+    </div>
+  </div>
+
+</div>
+
+
+  <button class="check-btn" id="finishBtn">Finish</button>
+  <div id="results" style="display:none; margin: 40px auto; max-width: 800px;"></div>
+
+  <script src="script.js?v=5"></script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
