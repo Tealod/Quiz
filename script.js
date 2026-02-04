@@ -50,10 +50,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (input) userAns = input.value.trim();
       }
 
-      let normCorrect = correct.toLowerCase().replace(/\s+/g, '');
-      let userNorm    = userAns.toLowerCase().replace(/\s+/g, '');
+     let normCorrect = correct.toLowerCase().replace(/\s+/g, '');
+let userNorm    = userAns.toLowerCase().replace(/\s+/g, '');
 
-      let isCorrect = (userNorm === normCorrect);
+// OR logic
+let isCorrect = normCorrect.split(',').includes(userNorm);
+
 
       // Allow small floating-point tolerance
       if (!isCorrect && !isNaN(parseFloat(userAns)) && !isNaN(parseFloat(correct))) {
@@ -85,5 +87,6 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+
 
 
