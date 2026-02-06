@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Math Predictions Module 1</title>
+  
+  <link rel="icon" href="./favicon.jpg" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+
+  <div class="header">
+    <h2>Math Module 1 by Xasan</h2>
+    <div class="timer">Remaining time: <span id="time">35:00</span></div>
+    <div id="student-info"></div>
+  </div>
+
+  <div id="quiz-container">
+
+    <!-- Question 1 -->
+    <div class="question-card" data-qnum="1" data-answer="-16" data-type="text">
+      <span class="question-num">Question 1</span>
+      <p>The system of two equations, \( y = \frac{m}{x} \) and \( y = nx + 8 \), is graphed in the xy-plane as shown. What is the value of \( m + n \)?</p>
+      <img src="q1.png" alt="Graph of the two equations">
+      Your Answer: <input type="text" class="user-input">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question-card" data-qnum="2" data-answer="A" data-type="radio">
+      <span class="question-num">Question 2</span>
+      <p>The functions h and f are defined by \( h(x) = -\frac{3}{5}x - 12 \) and \( f(x) = -2x^2 + 8x - 6 \). What is the value of \( h(f(-2)) \)?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q2" value="A"> A) 6</li>
+        <li><input type="radio" name="q2" value="B"> B) -30</li>
+        <li><input type="radio" name="q2" value="C"> C) 30</li>
+        <li><input type="radio" name="q2" value="D"> D) -6</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 3 -->
+    <div class="question-card" data-qnum="3" data-answer="D" data-type="radio">
+      <span class="question-num">Question 3</span>
+      <p>If \(-12x + 8 = 36\), what is the value of \(4 - 6x\)?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q3" value="A"> A) -18</li>
+        <li><input type="radio" name="q3" value="B"> B) 19</li>
+        <li><input type="radio" name="q3" value="C"> C) -19</li>
+        <li><input type="radio" name="q3" value="D"> D) 18</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 4 -->
+    <div class="question-card" data-qnum="4" data-answer="A" data-type="radio">
+      <span class="question-num">Question 4</span>
+      <p>John is raising m dogs and n cats. Each three dogs require 6 liters of water and each four cats require 12 liters of water every day. The m dogs and n cats require a total of 36 liters of water every day. Which equation represents this situation?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q4" value="A"> A) \(6m + 12n = 36\)</li>
+        <li><input type="radio" name="q4" value="B"> B) \(3m + 2n = 36\)</li>
+        <li><input type="radio" name="q4" value="C"> C) \(2m + 3n = 36\)</li>
+        <li><input type="radio" name="q4" value="D"> D) \(12m + 6n = 36\)</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 5 -->
+    <div class="question-card" data-qnum="5" data-answer="D" data-type="radio">
+      <span class="question-num">Question 5</span>
+      <p>The function \( f(x) = -\frac{1}{2}(x-4)^2 + 18 \) gives a basketball’s height above the ground f(x), in meters, x seconds after it is launched, where \( 0 \leq x \leq 10 \). Which of the following is the best interpretation of the vertex of the graph of y = f(x) in the xy-plane?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q5" value="A"> A) The basketball’s minimum height is 18 meters above the ground.</li>
+        <li><input type="radio" name="q5" value="B"> B) The basketball’s height is 4 meters above the ground when it is launched.</li>
+        <li><input type="radio" name="q5" value="C"> C) The basketball’s height is 18 meters above the ground when it is launched.</li>
+        <li><input type="radio" name="q5" value="D"> D) The basketball’s maximum height was 18 meters above the ground.</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 6 -->
+    <div class="question-card" data-qnum="6" data-answer="A" data-type="radio">
+      <span class="question-num">Question 6</span>
+      <p>Which expression is equivalent to \( (2k - 7)(-k - 2) \)?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q6" value="A"> A) \(-2k^2 + 3k + 14\)</li>
+        <li><input type="radio" name="q6" value="B"> B) \(-2k^2 - 11k + 14\)</li>
+        <li><input type="radio" name="q6" value="C"> C) \(-2k^2 - 3k - 14\)</li>
+        <li><input type="radio" name="q6" value="D"> D) \(-2k^2 + 11k + 14\)</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 7 -->
+    <div class="question-card" data-qnum="7" data-answer="C" data-type="radio">
+      <span class="question-num">Question 7</span>
+      <p>Data set A: 2, 2, 2, 5, 5, 8, 11, 11, 14, 14, 14<br>
+      Data set B: 2, 5, 5, 8, 8, 8, 8, 11, 11, 14<br>
+      Data set A and B each have 11 values. Which of the following statements best compares the standard deviations and means of data set A and data set B?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q7" value="A"> A) Data set A has a smaller standard deviation and higher mean than data set B has.</li>
+        <li><input type="radio" name="q7" value="B"> B) Data set A has a higher standard deviation and smaller mean than data set B has.</li>
+        <li><input type="radio" name="q7" value="C"> C) Data set A has a higher standard deviation than data set B has, but they have the same mean.</li>
+        <li><input type="radio" name="q7" value="D"> D) Data set A and B have the same standard deviation and mean.</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 8 -->
+    <div class="question-card" data-qnum="8" data-answer="D" data-type="radio">
+      <span class="question-num">Question 8</span>
+      <p>In the xy-plane, the graph of the equation \(-3x + 8y = 18\) is translated 3 units right and 5 units up. Which of the following is an equation of the resulting graph?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q8" value="A"> A) \(-3(x-3) + 8(y+5) = 18\)</li>
+        <li><input type="radio" name="q8" value="B"> B) \(-3(x+3) + 8(y-5) = 18\)</li>
+        <li><input type="radio" name="q8" value="C"> C) \(-3(x+3) + 8(y+5) = 18\)</li>
+        <li><input type="radio" name="q8" value="D"> D) \(-3(x-3) + 8(y-5) = 18\)</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 9 -->
+    <div class="question-card" data-qnum="9" data-answer="80" data-type="text">
+      <span class="question-num">Question 9</span>
+      <p>A chemist mixed x liters of 5% saline solution with 20 liters of 40% saline solution to produce a 12% saline solution. What is the value of x?</p>
+      Your Answer: <input type="text" class="user-input">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 10 -->
+    <div class="question-card" data-qnum="10" data-answer="B" data-type="radio">
+      <span class="question-num">Question 10</span>
+      <p>The floor of a school is in a square shape and has an area of 2,025 square meters. An architect creates a scale model of the floor of the school, where the length of each side of the model is 1/15 times the length of the corresponding side of the actual floor of the school. What is the length of one side, in meters, of the scale model?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q10" value="A"> A) 9</li>
+        <li><input type="radio" name="q10" value="B"> B) 3</li>
+        <li><input type="radio" name="q10" value="C"> C) 135</li>
+        <li><input type="radio" name="q10" value="D"> D) 45</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 11 -->
+    <div class="question-card" data-qnum="11" data-answer="-19" data-type="text">
+      <span class="question-num">Question 11</span>
+      <p>\( 2x^2 - 10x + 2y^2 + 18y + c = 0 \)<br>
+      In the xy-plane, the graph of the given equation is a circle. If this circle has a radius of 6, what is the value of c?</p>
+      Your Answer: <input type="text" class="user-input">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 12 -->
+    <div class="question-card" data-qnum="12" data-answer="13" data-type="text">
+      <span class="question-num">Question 12</span>
+      <p>\( C(t) = 135 \left( \frac{44}{33} \right)^{t-13} + 8 \)<br>
+      The function C gives the estimated number of cephalopods... How many months after the study began was the number of cephalopods in the area estimated to be 143?</p>
+      Your Answer: <input type="text" class="user-input">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 13 -->
+    <div class="question-card" data-qnum="13" data-answer="D" data-type="radio">
+      <span class="question-num">Question 13</span>
+      <p>\( \frac{1}{8}x - \frac{4r}{9}y = -32 \)<br>
+      One of the equations in a system of two linear equations is given, where r is a nonzero constant. The system has no solution. If the other equation in the system is graphed in the xy-plane, what is the slope of the graph?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q13" value="A"> A) \( -\frac{32}{9r} \)</li>
+        <li><input type="radio" name="q13" value="B"> B) \( \frac{9r}{32} \)</li>
+        <li><input type="radio" name="q13" value="C"> C) \( -\frac{9}{32r} \)</li>
+        <li><input type="radio" name="q13" value="D"> D) \( \frac{9}{32r} \)</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+        <!-- Question 14 -->
+    <div class="question-card" data-qnum="14" data-answer="C" data-type="radio">
+      <span class="question-num">Question 14</span>
+      <p>A machine makes 8-inch, 9-inch, and 3-inch parts. During a certain day, the number of 3-inch parts that the machine makes is 6 times more than the number n of 8-inch parts, and the number of 9-inch parts is 50. During this day, the machine makes a total of 154 parts that have a total length of 827 inches. Which of the following equations represents this situation?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q14" value="A"> A) 3(6n) + 8n + 9(50) = 154</li>
+        <li><input type="radio" name="q14" value="B"> B) 3(6n) + 8n + 9(50) = 827</li>
+        <li><input type="radio" name="q14" value="C"> C) 29n + 9(50) = 827</li>
+        <li><input type="radio" name="q14" value="D"> D) 29n + 9(50) = 154</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 15 -->
+    <div class="question-card" data-qnum="15" data-answer="A" data-type="radio">
+      <span class="question-num">Question 15</span>
+      <img src="q15t.png">
+      <ul class="options-list">
+        <li><input type="radio" name="q15" value="A"> A) \(18\sqrt{2} \sin(Q)\)</li>
+        <li><input type="radio" name="q15" value="B"> B) \(9\sqrt{2} \cos(R)\)</li>
+        <li><input type="radio" name="q15" value="C"> C) \(18 \tan(Q)\)</li>
+        <li><input type="radio" name="q15" value="D"> D) \(9\sqrt{2} \tan(R)\)</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 16 -->
+    <div class="question-card" data-qnum="16" data-answer="-648" data-type="text">
+      <span class="question-num">Question 16</span>
+      <p>
+        −32x + 18y + 150 = 15y + 4x<br>
+        52 + w/3 x + 18y = −32
+      </p>
+      <p>In the given system of equations, w is a constant. The system has only one solution. Find the value that w is not equal to.</p>
+      Your Answer: <input type="text" class="user-input">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 17 -->
+    <div class="question-card" data-qnum="17" data-answer="C" data-type="radio">
+      <span class="question-num">Question 17</span>
+      <img src="17t.png">
+       <ul class="options-list">
+        <li><input type="radio" name="q17" value="A"> A) 39/16</li>
+        <li><input type="radio" name="q17" value="B"> B) 15/16</li>
+        <li><input type="radio" name="q17" value="C"> C) −39/16</li>
+        <li><input type="radio" name="q17" value="D"> D) −15/16</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 18 -->
+    <div class="question-card" data-qnum="18" data-answer="19950" data-type="text">
+      <span class="question-num">Question 18</span>
+      <p>A researcher surveyed undergraduate students, graduate students, and postdoctoral students. The number of undergraduate students surveyed was 6,750% of the number of postdoctoral students surveyed, and the number of graduate students surveyed was 60% of the sum of the number of undergraduate and postdoctoral students surveyed. If there were 12,330 graduate students surveyed, what was the positive difference between the number of undergraduate students and postdoctoral students surveyed?</p>
+      Your Answer: <input type="text" class="user-input">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 19 -->
+    <div class="question-card" data-qnum="19" data-answer="B" data-type="radio">
+      <span class="question-num">Question 19</span>
+     <img src="q19a.png" alt="Intersecting segments AD and BE at C">
+      <ul class="options-list">
+        <li><input type="radio" name="q19" value="A"> A) 100/3</li>
+        <li><input type="radio" name="q19" value="B"> B) 94/3</li>
+        <li><input type="radio" name="q19" value="C"> C) 144/5</li>
+        <li><input type="radio" name="q19" value="D"> D) 114/5</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 20 -->
+    <div class="question-card" data-qnum="20" data-answer="92" data-type="text">
+      <span class="question-num">Question 20</span>
+      <p>Ali earns $25 per hour for the first 30 hours worked in a week, and for each hour worked over 30 hours, he earns $35 per hour. John earns $27 per hour for the first 25 hours worked in a week, and for each hour worked over 25 hours, he earns $32 per hour. If both of them work the same number of hours, what is the least whole number of hours that Ali has to work to earn at least $100 more than John in a week.</p>
+      Your Answer: <input type="text" class="user-input">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 21 -->
+    <div class="question-card" data-qnum="21" data-answer="168/126" data-type="text">
+      <span class="question-num">Question 21</span>
+      <img src="q21.png">
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+    <!-- Question 22 -->
+    <div class="question-card" data-qnum="22" data-answer="A" data-type="radio">
+      <span class="question-num">Question 22</span>
+      <p>There is a system of three linear equations, f(x) = −6 , x = k and g(x) = −(5/2)x + c, where k and c are constants. If x = k and g(x) = −(5/2)x + c intersect at the point (-5, -2), what is the area of a shape formed by the intersection of these three equations?</p>
+      <ul class="options-list">
+        <li><input type="radio" name="q22" value="A"> A) 3.2</li>
+        <li><input type="radio" name="q22" value="B"> B) 3.4</li>
+        <li><input type="radio" name="q22" value="C"> C) 3.6</li>
+        <li><input type="radio" name="q22" value="D"> D) 3.8</li>
+      </ul>
+      <div class="correct-answer-display" style="display:none;">
+        <strong>Correct answer: </strong><span class="correct-answer-text"></span>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="check-btn" id="finishBtn">Finish</button>
+  <div id="results" style="display:none; margin: 40px auto; max-width: 800px;"></div>
+
+  <script src="script.js?v=5"></script>
+
+</body>
+</html>
