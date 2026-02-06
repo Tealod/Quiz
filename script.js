@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('student-info').textContent = `Student: ${name}`;
 
   // ── Timer (60 minutes) ────────────────────────────────────────
-  let timeLeft = 35*60; // seconds
+  let timeLeft = 2100; // seconds
   const timeDisplay = document.getElementById('time');
 
   const timer = setInterval(() => {
@@ -87,6 +87,7 @@ let isCorrect = normCorrect.split(',').includes(userNorm);
   }
 
 });
+
 
 
 
